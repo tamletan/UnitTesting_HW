@@ -44,5 +44,8 @@ class Test_TestStack(unittest.TestCase):
 		self.test_stack.Clear()
 		self.assertTrue(self.test_stack.IsEmpty(), 'Clear error')
 
+	def test_empty(self):
+		self.assertTrue(self.test_stack.IsEmpty(), 'Stack must be Empty')
+
 if __name__ == '__main__':
 	unittest.main()
